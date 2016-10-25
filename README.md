@@ -82,3 +82,17 @@ imgFigureClassName += this.props.arrange.isInverse ? ' is-inverse' : '';
 ## 最后
 
 [materliu](https://github.com/materliu)是个非常好的带有文艺气息的高水平的程序员，已经路转粉了。
+
+## 补充 - 发布到gh-pages个人主页步骤
+1. 删除原有的gh-pages分支 
+    ```
+    git push origin :gh-pages
+    ```
+
+2. 打包项目
+        要打包的时候，需要将defaults.js的"/assets/"修改为"assets/"，打包好，修改dist目录下的index.html的"/assets/"为"assets/"，然后在把defaults.js还原为"assets/"这样本地开发才可以跑起。
+
+2. 把dist目录推送到gh-pages分支
+    commit 到本地，然后推送到gh-pages分支
+    git subtree push --prefix=dist origin gh-pages
+    然后可以通过https://jeromesuz.github.io/gallery/访问 （https://usernamexxx.github.io/projectnamexxx/）
