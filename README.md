@@ -95,4 +95,4 @@ imgFigureClassName += this.props.arrange.isInverse ? ' is-inverse' : '';
 2. 把dist目录推送到gh-pages分支
     commit 到本地，然后推送到gh-pages分支
     git subtree push --prefix=dist origin gh-pages
-    然后可以通过https://jeromesuz.github.io/gallery/访问 （https://usernamexxx.github.io/projectnamexxx/）
+    然后可以通过https://jeromesuz.github.io/gallery/ 访问 （https://usernamexxx.github.io/projectnamexxx/）
